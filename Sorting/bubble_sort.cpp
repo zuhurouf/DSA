@@ -15,7 +15,7 @@ int main() {
     bool swapped;
     for (int i = 0; i < 5; i++) {
         swapped = false;
-        for (int j = 0; j < 5 - i -1; j++) { //For each ith turn, loop through the array one less than n
+        for (int j = 0; j < 5 - i -1; j++) { //For each ith pass, traverse till (n-i-1)-1 th positoin as the elements after that are already sorted
             if (arr[j] > arr[j+1]) {
                 temp = arr[j];
                 arr[j] = arr[j+1];
